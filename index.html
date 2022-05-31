@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+
+<body>
+    <header class="titulo">
+        BlackJack.
+    </header>
+
+    <div class="row mt-2">
+        <div id="divBotones" class="col text-center">
+
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" class="btn btn-primary">Deten Juego </button>
+
+        </div>
+
+    </div>
+
+<!-- ACA CREAMOS EL JUEGO DEL PLAYER 1 -->
+
+    <div class="row container">
+        <div class="col">
+            <h1 class="mt-3">Jugador 1 - <small>0</small></h1>
+            <div class="mt-5" id="jugador-cartas">
+                <!-- <img class="carta" src="assets/cartas/cartas/4C.png">               -->
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- ACA VAMOS A CREAR EL JUEGO DE LA COMPUTADORA -->
+
+<div class="row container">
+    <div class="col">
+        <h1 class="mt-5"> Computadora - <small>0</small>
+        </h1>
+        <div class="mt-5" id="computadora-cartas">
+            <!-- <img class="carta" src="assets/cartas/cartas/2D.png">             -->
+        </div>
+    </div>
+</div>
+
+
+<!-- Importacion de Scrip de Java -->
+<script src="assets/js/underscore-min.js"></script>
+<script src="assets/js/juego.js"></script>
+
+</body>
+</html>
